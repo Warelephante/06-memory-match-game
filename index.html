@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff8ee">
+  <title>Emoji Memory Match</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="game">
+    <header class="game-header">
+      <p class="eyebrow">A little brain break</p>
+      <h1>Emoji Memory Match <span aria-hidden="true">✨</span></h1>
+      <p class="intro">Find all the matching emoji pairs. How many moves will it take?</p>
+    </header>
+
+    <section class="game-panel" aria-label="Memory match game">
+      <div class="game-toolbar">
+        <div class="stats" aria-label="Game stats">
+          <p class="stat">
+            <span class="stat-label">Moves</span>
+            <span class="stat-value" id="moves">0</span>
+          </p>
+          <p class="stat">
+            <span class="stat-label">Time</span>
+            <span class="stat-value"><span id="timer">00:00</span></span>
+          </p>
+        </div>
+        <button class="reset-button" id="reset-button" type="button">
+          <span aria-hidden="true">↻</span> Restart
+        </button>
+      </div>
+
+      <div class="card-grid" id="card-grid" aria-label="Memory cards"></div>
+      <p class="game-message" id="game-message" aria-live="polite">Pick any card to start!</p>
+    </section>
+
+    <footer class="game-footer">Take your time and trust your memory <span aria-hidden="true">💛</span></footer>
+  </main>
+</body>
+</html>
